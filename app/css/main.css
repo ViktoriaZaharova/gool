@@ -647,7 +647,8 @@ footer {
       font-size: 14px;
       font-weight: 500; }
       .footer-menu li a:hover {
-        color: #383838; }
+        color: #fff;
+        text-decoration: underline; }
 
 .column-count-1 {
   -webkit-column-count: 1;
@@ -982,6 +983,8 @@ footer {
     z-index: 1; }
   .new-img > * {
     position: relative; }
+  .new-img:hover .new-title {
+    text-decoration: underline; }
   .new-img img {
     width: 100%;
     height: 100%;
@@ -1201,6 +1204,8 @@ footer {
   font-size: 14px; }
   .forecast-box:last-child {
     border: none; }
+  .forecast-box:hover {
+    color: #46abd3; }
 
 .forecast-box-info {
   display: -webkit-box;
@@ -1265,6 +1270,8 @@ footer {
   margin: 0 0 27px;
   white-space: nowrap;
   text-align: center; }
+  .club-item:hover {
+    color: #383838; }
 
 .club-item-logo {
   display: -webkit-box;
@@ -1303,6 +1310,8 @@ footer {
   line-height: 1; }
   .transfers-box:last-child {
     border: none; }
+  .transfers-box:hover {
+    background: #f7f7f7; }
 
 .transfers-box-photo {
   display: -webkit-box;
@@ -1430,6 +1439,8 @@ footer {
           justify-content: center;
   text-align: center;
   line-height: 1; }
+  .sorting-box:hover {
+    color: #46abd3; }
 
 .sorting-box.active {
   color: #000000;
@@ -1451,6 +1462,8 @@ footer {
   border-bottom: solid 1px #f7f7f7; }
   .match-reviews-line:last-child {
     border: none; }
+  .match-reviews-line:hover {
+    background: #f7f7f7; }
 
 .score-match {
   display: -webkit-box;
@@ -1648,6 +1661,8 @@ footer {
   position: relative; }
   .overview-sorting__box .date {
     color: #808080; }
+  .overview-sorting__box:hover {
+    color: #46abd3; }
 
 .overview-sorting__img {
   width: 123.7px;
@@ -1929,6 +1944,8 @@ footer {
   font-weight: 600;
   color: #000;
   font-family: 'Montserrat', sans-serif; }
+  .bookmakers-box:hover {
+    color: #46abd3; }
 
 .bookmakers-box__img {
   display: -webkit-box;
@@ -2040,6 +2057,8 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     color: #000; }
+  .article-info-box .links-accent {
+    color: #46abd3; }
 
 .article-info-box__top {
   background: rgba(0, 0, 0, 0.15);
@@ -2179,6 +2198,8 @@ textarea {
     color: rgba(0, 0, 0, 0.5); }
     .reviews-filter a span {
       color: #d9d9d9; }
+    .reviews-filter a:hover {
+      color: #46abd3; }
   .reviews-filter .active {
     color: #000; }
 
@@ -2294,6 +2315,8 @@ textarea {
 
 .links-green {
   color: #17911a; }
+  .links-green:hover {
+    color: #46abd3; }
 
 .vote-wrapper {
   display: -webkit-box;
@@ -2346,6 +2369,8 @@ textarea {
       bottom: 12px;
       right: 16px;
       color: #17911a; }
+      .answer-box .form-comment button:hover {
+        color: #46abd3; }
     .answer-box .form-comment textarea {
       height: 104px; }
 
@@ -2538,7 +2563,16 @@ button {
   .list-logo-club li {
     margin: 0 5px 5px 0; }
   .form-search {
-    display: none; }
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: none;
+    margin: 10px auto 0; }
+  input {
+    font-size: 14px;
+    height: 30px;
+    padding: 0 15px; }
   .pagination a {
     height: 30px;
     padding: 0 10px;
@@ -2677,8 +2711,8 @@ button {
     width: 38px; }
   .form-comment {
     width: calc(100% - 38px); }
-  input {
-    height: 42px; }
+    .form-comment input {
+      height: 42px; }
   .result-comment-text {
     margin: 40px 0; }
   textarea {

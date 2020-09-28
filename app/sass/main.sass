@@ -496,7 +496,8 @@ footer
       font-size: 14px
       font-weight: 500
       &:hover
-        color: $hover
+        color: #fff
+        text-decoration: underline
 
 .column-count-1
   column-count: 1
@@ -740,6 +741,9 @@ footer
     z-index: 1
   >*
     position: relative
+  &:hover
+    .new-title
+      text-decoration: underline
 
   img
     width: 100%
@@ -920,6 +924,8 @@ footer
   font-size: 14px
   &:last-child
     border: none
+  &:hover
+    color: $accent
 
 .forecast-box-info
   display: flex
@@ -964,6 +970,8 @@ footer
   margin: 0 0 27px
   white-space: nowrap
   text-align: center
+  &:hover
+    color: $hover
 
 .club-item-logo
   display: flex
@@ -992,6 +1000,8 @@ footer
   line-height: 1
   &:last-child
     border: none
+  &:hover
+    background: #f7f7f7
 
 .transfers-box-photo
   display: flex
@@ -1069,6 +1079,8 @@ footer
   justify-content: center
   text-align: center
   line-height: 1
+  &:hover
+    color: $accent
 
 .sorting-box.active
   color: #000000
@@ -1086,6 +1098,8 @@ footer
   border-bottom: solid 1px #f7f7f7
   &:last-child
     border: none
+  &:hover
+    background: #f7f7f7
 
 .score-match
   display: flex
@@ -1231,6 +1245,8 @@ footer
   position: relative
   .date
     color: #808080
+  &:hover
+    color: $accent
 
 .overview-sorting__img
   width: 123.7px
@@ -1432,6 +1448,8 @@ footer
   font-weight: 600
   color: #000
   font-family: 'Montserrat', sans-serif
+  &:hover
+    color: $accent
 
 .bookmakers-box__img
   display: flex
@@ -1505,6 +1523,8 @@ footer
     align-items: center
     justify-content: center
     color: #000
+  .links-accent
+    color: $accent
     
 .article-info-box__top
   background: rgba(#000000, .15)
@@ -1600,8 +1620,11 @@ textarea
     color: rgba(0, 0, 0, 0.5)
     span
       color: #d9d9d9
+    &:hover
+      color: $accent
   .active
     color: #000
+
 
 .result-comment-text
   width: 100%
@@ -1680,6 +1703,8 @@ textarea
 
 .links-green
   color: #17911a
+  &:hover
+    color: $accent
 
 .vote-wrapper
   display: flex
@@ -1719,6 +1744,8 @@ textarea
       bottom: 12px
       right: 16px
       color: #17911a
+      &:hover
+        color: $accent
     textarea
       height: 104px
 
